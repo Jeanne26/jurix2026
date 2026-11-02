@@ -1,0 +1,9 @@
+[project]
+name = "jurix2026"
+version = "0.1.0"
+description = "Retraction of erroneous truths in a belief-based framework for the moral evaluation of speech acts (ASP)"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "clingo>=5.8",
+]
