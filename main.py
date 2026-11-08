@@ -9,10 +9,9 @@ PROGRAMS = [ROOT / "framework.lp", ROOT / "appeal_deadline.lp"]
 SCENARIOS = {
     "Base": [],
     "Too late": [ROOT / "variants" / "too_late.lp"],
-    "Undeserving addressee": [ROOT / "variants" / "undeserving_addressee.lp"],
 }
-THEORIES = ["m2", "m3", "p1", "p2", "c1", "c2"]
-DECISIONS = {"stand": "leave standing", "retract": "retract"}
+THEORIES = ["m1", "m2", "c1", "c2"]
+DECISIONS = {"not_re": "not retract", "re": "retract"}
 SYMBOLS = {"ok": "✓", "ko": "✗"}
 
 
@@ -61,8 +60,9 @@ def render(name, atoms):
 
 def main():
     sections = ["# Verdicts at step 1", "",
-                "m: maxim, p: principialism, c: consequentialism; "
-                "✓: permissible, ✗: impermissible.", ""]
+                "m1, m2: instantaneous and persistent honesty maxims "
+                "(deontologism); c1, c2: expected and actual utility "
+                "(consequentialism); ✓: permissible, ✗: impermissible.", ""]
     for name, extra in SCENARIOS.items():
         sections.append(render(name, solve(PROGRAMS + extra)))
     report = "\n".join(sections)
