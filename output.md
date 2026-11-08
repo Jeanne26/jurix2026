@@ -1,30 +1,21 @@
 # Verdicts at step 1
 
-m: maxim, p: principialism, c: consequentialism; ✓: permissible, ✗: impermissible.
+m1, m2: instantaneous and persistent honesty maxims (deontologism); c1, c2: expected and actual utility (consequentialism); ✓: permissible, ✗: impermissible.
 
 ## Base
 
 Step-0 assertion: erroneous_truth.
 
-| Decision | m2 | m3 | p1 | p2 | c1 | c2 |
-|---|---|---|---|---|---|---|
-| leave standing | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ |
-| retract | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Decision | m1 | m2 | c1 | c2 |
+|---|---|---|---|---|
+| not retract | ✓ | ✗ | ✗ | ✗ |
+| retract | ✓ | ✓ | ✓ | ✓ |
 
 ## Too late
 
 Step-0 assertion: erroneous_truth.
 
-| Decision | m2 | m3 | p1 | p2 | c1 | c2 |
-|---|---|---|---|---|---|---|
-| leave standing | ✓ | ✗ | ✗ | ✗ | ✓ | ✓ |
-| retract | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-
-## Undeserving addressee
-
-Step-0 assertion: erroneous_truth.
-
-| Decision | m2 | m3 | p1 | p2 | c1 | c2 |
-|---|---|---|---|---|---|---|
-| leave standing | ✓ | ✗ | ✓ | ✗ | ✗ | ✗ |
-| retract | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Decision | m1 | m2 | c1 | c2 |
+|---|---|---|---|---|
+| not retract | ✓ | ✗ | ✓ | ✓ |
+| retract | ✓ | ✓ | ✓ | ✓ |
